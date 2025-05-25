@@ -417,3 +417,14 @@ body {
     right: 5%;
   }
 }
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .producto {
+    width: 100%;
+  }
+}
