@@ -54,6 +54,7 @@ header {
   font-weight: bold;
   display: inline-block;
 }
+
 #carrito {
     position: fixed;
     top: 70px;
@@ -82,6 +83,7 @@ header {
   #comprar {
     background-color:  #25D366;
     font-size: 15px;
+    cursor: pointer;
   }
   /* Oculto por defecto */
   .oculto {
@@ -322,16 +324,6 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   padding: 20px;
-}
-.contador {
-  background: red;
-  color: white;
-  border-radius: 50%;
-  padding: 2px 6px;
-  font-size: 12px;
-  position: absolute;
-  top: -5px;
-  right: -10px;
 }
 
 .producto h3 {
