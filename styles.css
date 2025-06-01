@@ -272,11 +272,11 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #1a1a1a;
+  background-color: #39527a;
   min-width: 150px;
   display: none;
   flex-direction: column;
-  border: 1px solid #333;
+  border: 1px solid black;
   border-radius: 4px;
   z-index: 1000;
 }
