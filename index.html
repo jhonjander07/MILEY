@@ -19,7 +19,7 @@
     <div class="navbar-logo">MiEmpresa</div>
     <ul class="navbar-menu">
       <li><a href="#">Inicio</a></li>
-      <li><a href="#">Servicios</a></li>
+      <li><a href="/otros/servicios.html">Servicios</a></li>
       <li class="dropdown">
         <a href="#">Productos ▾</a>
         <ul class="dropdown-menu">
@@ -29,21 +29,19 @@
           <li><a href="productos/orejeras.html">Orejeras</a></li>
         </ul>
       </li>
-      <li><a href="#">Contacto</a></li>
+      <li><a href="/otros/contacto.html">Contacto</a></li>
     </ul>
     <ul>
-  <a href="#" id="carrito-btn">
-  🛒 Carrito <span class="contador" id="contador">0</span>
-</a>
+ <button id="toggle-carrito">🛒 Carrito <span id="burbuja-carrito" class="burbuja">0</span></button>
 
-<div class="carrito-lista" id="carrito-lista">
-  <h4>Tu Carrito</h4>
-  <ul id="lista-productos"></ul>
-  <p>Total: $<span id="total">0</span></p>
-  <button class="vaciar-btn" id="vaciar-carrito">Vaciar carrito</button>
-  <button class="comprar-btn" id="comprar">Comprar</button>
+<!-- Contenedor del carrito -->
+<div id="carrito" class="oculto">
+  <h2>Carrito de Compras</h2>
+  <ul id="lista-carrito"></ul>
+  <p id="total">Total: $0.00</p>
+  <button id="vaciar-carrito">Vaciar Carrito</button>
+  <button id="comprar">Comprar</button>
 </div>
-
 </ul>
   </nav>
   <header>
