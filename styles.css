@@ -399,3 +399,53 @@ body {
   text-align: center;
 }
 
+/* contactos */
+.contacto {
+  padding: 20px;
+  background-color: #141c29;
+  text-align: center;
+}
+
+.lista-contacto {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-contacto li {
+  margin: 12px 0;
+  font-size: 16px;
+}
+.servicios h2{
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: xx-large;
+}
+.lista-servicios li{
+  padding-top: 5px;
+  text-align: center;
+  list-style: none;
+}
+/* sobre nostros */
+.acerca {
+  max-width: 700px;
+  margin: 10px auto;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.8;
+  background-color: #141c29;
+  border-left: 4px solid black; /* negro */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.acerca h2 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.acerca p {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 15px;
+}
