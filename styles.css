@@ -361,3 +361,41 @@ body {
 .btn-atras:hover {
   background-color: #ddd;
 }
+
+/* Responsive: en pantallas pequeñas, que se adapte */
+@media (max-width: 600px) {
+  .carrito-lista {
+    width: 90vw;
+    right: 5%;
+    left: 5%;
+  }
+
+  .producto {
+    font-size: 14px;
+  }
+
+  .producto button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+#carrito-btn {
+  cursor: pointer;
+  position: relative;
+}
+.footer {
+  text-align: center;
+}
+
