@@ -241,10 +241,12 @@ body {
 }
 
 .navbar-logo {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
-
+.navbar-sub {
+  font-size: 1.5rem;
+}
 .navbar-menu {
   list-style: none;
   display: flex;
