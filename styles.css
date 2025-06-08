@@ -8,7 +8,8 @@
 body {
   font-family: 'space grotesk', sans-serif;
   background-color: #141c29;
-  padding-top: 80px;
+  margin: 20px;
+  padding: 20px;
 }
 
 h1 {
@@ -104,7 +105,7 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .contenedor>div {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
@@ -150,21 +151,10 @@ header {
 }
 
 
-/* Reset básico */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 /* Footer */
 .footer {
   background-color: #141c29;
-  color: #ffd700;
   padding: 20px 15px;
 }
 
@@ -188,7 +178,7 @@ body {
 }
 
 .footer-section p {
-  color: #bbb;
+  color: #fff;
 }
 
 .footer-section ul {
@@ -227,19 +217,8 @@ body {
   border-top: 1px solid #333;
   margin-top: 30px;
 }
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 20px;
-  padding: 20px;
-}
-
+/* navbar */
 .navbar {
   background-color: #141c29;
   color: white;
