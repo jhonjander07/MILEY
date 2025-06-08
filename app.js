@@ -52,7 +52,7 @@ comprarBtn.addEventListener("click", () => {
   const total = carrito.reduce((sum, item) => sum + item.precio, 0);
   const mensaje = `Hola, quiero comprar:%0A${resumen}%0A%0ATotal: ${formatearCOP.format(total)}`;
   const numeroWhatsApp = "3122058303";
-  window.open(`https://wa.me/${numeroWhatsApp}?text=${mensaje}`, "_blank");
+  window.open(`https://wa.me/${3122058303}?text=${mensaje}`, "_blank");
 
   carrito.length = 0;
   sessionStorage.removeItem("carrito");
