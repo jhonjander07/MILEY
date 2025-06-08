@@ -1,6 +1,7 @@
 // 🔁 Recuperar el carrito desde sessionStorage (o iniciar vacío)
 let carrito = JSON.parse(sessionStorage.getItem("carrito")) || [];
 
+// referenciar los html
 const burbuja = document.getElementById("burbuja-carrito");
 const listaCarrito = document.getElementById("lista-carrito");
 const totalElemento = document.getElementById("total");
@@ -18,10 +19,12 @@ const formatearCOP = new Intl.NumberFormat("es-CO", {
   maximumFractionDigits: 6
 });
 
+// mostrar u ocultar carrito
 toggleCarrito.addEventListener("click", () => {
   contenedorCarrito.classList.toggle("oculto");
 });
 
+// agregar productos al carrito
 botonesAgregar.forEach((btn) => {
   btn.addEventListener("click", () => {
     const producto = btn.closest(".producto");
@@ -33,12 +36,14 @@ botonesAgregar.forEach((btn) => {
   });
 });
 
+// vaciar el carrito
 vaciarBtn.addEventListener("click", () => {
   carrito.length = 0;
   sessionStorage.removeItem("carrito");
   actualizarCarrito();
 });
 
+// comprar (enviar al whatsapp)
 comprarBtn.addEventListener("click", () => {
   if (carrito.length === 0) {
     alert("El carrito está vacío");
@@ -59,11 +64,13 @@ comprarBtn.addEventListener("click", () => {
   actualizarCarrito();
 });
 
+// eliminar producto individual
 function eliminarDelCarrito(index) {
   carrito.splice(index, 1);
   actualizarCarrito();
 }
 
+// actualizar carrito y almacenamiento
 function actualizarCarrito() {
   listaCarrito.innerHTML = "";
   let total = 0;
@@ -84,6 +91,7 @@ function actualizarCarrito() {
 
 actualizarCarrito();
 
+// cerrar el carrito al hacer clic fuera
 let clicDentro = false;
 
 document.addEventListener("mousedown", function (e) {
